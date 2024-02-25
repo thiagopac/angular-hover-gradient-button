@@ -1,27 +1,90 @@
-# HoverGradientButton
+# Angular Hover Gradient Button
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+The Angular Hover Gradient Button is a customizable, easy-to-use Angular button with a hover gradient effect on hover. The component suports font and svg icons with slot directive for placement.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Customizable background color and hover color.
+- Support for icons on the left or right side of the button's label.
+- Flexible and easy-to-use with dynamic content.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To install the Angular Hover Gradient Button in your project, you can run the following command:
 
-## Build
+```bash
+npm install angular-hover-gradient-button
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
 
-## Running unit tests
+First, import `AngularHoverGradientButton` in your Angular module or component:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```typescript
+import { AngularHoverGradientButton } from "angular-press-hold-button";
 
-## Running end-to-end tests
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, AngularHoverGradientButton],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Then, you can use the `angular-hover-gradient-button` component in your templates:
 
-## Further help
+```html
+<angular-hover-gradient-button backgroundColor="#8e44ad" hoverColor="#3498db">
+  <i slot="left" class="fa-regular fa-envelope"></i>
+  <span slot="label">Message</span>
+</angular-hover-gradient-button>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Icons
+
+The `angular-press-hold-button` component supports the dynamic display of icons based on the button's state. You can control the positioning and timing of icon display using the `slot` and `when` attributes respectively.
+
+### Slot Attribute
+
+The `slot` attribute determines the position of the icon within the button. There are two options for `slot`:
+
+- `left`: Positions the icon on the left side of the button.
+- `right`: Positions the icon on the right side of the button.
+
+Example usage:
+
+```html
+<i class="fa fa-icon-name" slot="left"></i>
+<!-- Icon on the left -->
+<i class="fa fa-icon-name" slot="right"></i>
+<!-- Icon on the right -->
+```
+
+## Inputs
+
+| Input             | Description                     | Type   | Default Value |
+| ----------------- | ------------------------------- | ------ | ------------- |
+| `backgroundColor` | Background color of the button. | String | `'#1e3799'`   |
+| `hoverColor`      | Color of the progress bar.      | String | `'#78e08f'`   |
+
+## Styling
+
+The component supports customization through CSS variables. You can override the following variables to customize the appearance:
+
+```scss
+angular-press-hold-button {
+  --button-color: white;
+  --button-padding: 1em;
+  --button-border-radius: 5px;
+  --button-border: none;
+  --button-font-size: 1.2em;
+}
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with your improvements.
+
+## License
+
+This project is licensed under the [ISC License](LICENSE.md).

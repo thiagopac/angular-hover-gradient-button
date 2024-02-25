@@ -1,0 +1,65 @@
+:root {
+  --button-color: white;
+  --button-padding: 1em;
+  --button-border-radius: 5px;
+  --button-border: none;
+  --button-font-size: 1.2em;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  gap: 10px;
+  width: auto;
+  appearance: none;
+  background-color: var(--background-color, #5f27cd);
+  padding: var(--button-padding, 1em);
+  border: var(--button-border, none);
+  color: var(--button-color, white);
+  font-size: var(--button-font-size, 1.2em);
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: var(--button-border-radius, 5px);
+  z-index: 1;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+button span {
+  display: inline-flex;
+  align-items: center;
+  pointer-events: none;
+  z-index: 3;
+}
+
+button::before {
+  --size: 0;
+
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(
+    circle closest-side,
+    var(--hover-color),
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+  z-index: 0;
+}
+
+button:hover::before {
+  --size: 400px;
+}
