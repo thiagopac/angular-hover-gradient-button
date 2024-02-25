@@ -1,6 +1,6 @@
 {
   "name": "hover-gradient-button",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,6 +11,16 @@
     "pack-lib": "cd dist/angular-hover-gradient-button && npm pack"
   },
   "private": true,
+  "keywords": [
+    "angular",
+    "button",
+    "hover",
+    "gradient",
+    "gradient mouse hover",
+    "angular button",
+    "gradient effect",
+    "glow effect"
+  ],
   "dependencies": {
     "@angular/animations": "^17.1.0",
     "@angular/common": "^17.1.0",
