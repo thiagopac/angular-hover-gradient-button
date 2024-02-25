@@ -1,10 +1,20 @@
 {
   "name": "angular-hover-gradient-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^17.2.0",
     "@angular/core": "^17.2.0"
   },
+  "keywords": [
+    "angular",
+    "button",
+    "hover",
+    "gradient",
+    "gradient mouse hover",
+    "angular button",
+    "gradient effect",
+    "glow effect"
+  ],
   "dependencies": {
     "tslib": "^2.3.0"
   },
