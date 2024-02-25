@@ -1,0 +1,9 @@
+<button class="button" (mousemove)="onMouseMove($event)" #button>
+  <div class="icon-container">
+    <ng-content select="[slot='left']"></ng-content>
+  </div>
+  <span><ng-content></ng-content></span>
+  <div class="icon-container">
+    <ng-content select="[slot='right']"></ng-content>
+  </div>
+</button>
