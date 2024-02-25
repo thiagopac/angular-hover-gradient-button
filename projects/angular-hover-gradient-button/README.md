@@ -1,6 +1,8 @@
 # Angular Hover Gradient Button
 
-The Angular Hover Gradient Button is a customizable, easy-to-use Angular button with a hover gradient effect on hover. The component suports font and svg icons with slot directive for placement.
+The Angular Hover Gradient Button is a customizable, easy-to-use Angular button with a hover gradient effect on hover.
+
+![hover-gradient-button](https://github.com/thiagopac/angular-hover-gradient-button/assets/3586967/928833e9-199d-4b3a-9009-9be0e51f0aa8)
 
 ## Features
 
@@ -21,7 +23,7 @@ npm install angular-hover-gradient-button
 First, import `AngularHoverGradientButton` in your Angular module or component:
 
 ```typescript
-import { AngularHoverGradientButton } from "angular-press-hold-button";
+import { AngularHoverGradientButton } from "angular-hover-gradient-button";
 
 @NgModule({
   declarations: [AppComponent],
@@ -42,7 +44,7 @@ Then, you can use the `angular-hover-gradient-button` component in your template
 
 ## Icons
 
-The `angular-press-hold-button` component supports the dynamic display of icons based on the button's state. You can control the positioning and timing of icon display using the `slot` and `when` attributes respectively.
+The `angular-hover-gradient-button` component supports positioning of icon display using the `slot` attribute.
 
 ### Slot Attribute
 
@@ -72,7 +74,7 @@ Example usage:
 The component supports customization through CSS variables. You can override the following variables to customize the appearance:
 
 ```scss
-angular-press-hold-button {
+angular-hover-gradient-button {
   --button-color: white;
   --button-padding: 1em;
   --button-border-radius: 5px;
