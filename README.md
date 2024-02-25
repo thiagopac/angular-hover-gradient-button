@@ -2,6 +2,8 @@
 
 The Angular Hover Gradient Button is a customizable, easy-to-use Angular button with a hover gradient effect on hover.
 
+### [Sample code](https://github.com/thiagopac/angular-hover-gradient-button/tree/main/projects/hover-gradient-button-example/src/app)
+
 ![hover-gradient-button](https://github.com/thiagopac/angular-hover-gradient-button/assets/3586967/928833e9-199d-4b3a-9009-9be0e51f0aa8)
 
 ## Features
